@@ -1,0 +1,17 @@
+package Spiral;
+
+import "Public.proto";
+
+option java_package = "com.happyelements.spiral.protocol.proto";
+option java_outer_classname = "ProtoLoginAction";
+message LoginRequest
+{
+	required string userName = 1;
+	required string password = 2; 
+	optional TestStruct test = 1001;
+}
+
+message LoginResponse
+{
+	required bool success = 1;
+}

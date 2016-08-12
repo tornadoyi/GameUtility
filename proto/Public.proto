@@ -1,0 +1,31 @@
+package Spiral;
+
+option java_package = "com.happyelements.spiral.protocol.proto";
+option java_outer_classname = "ProtoPublic";
+message Serial
+{
+	required int32 high = 1;
+	required int32 low = 2;
+}
+
+message Message
+{
+	required string type = 2;
+	optional bytes content = 3;
+}
+
+message Header
+{
+	required Serial id = 1;
+	repeated Message messageList = 2;
+	optional string token = 1001;
+	optional int32 version = 1002;    
+	optional int32 timestamp = 1003;
+}
+
+message TestStruct
+{
+	required int32 i = 1;
+	required string s = 2;
+	required float f = 3;
+}

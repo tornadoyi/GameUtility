@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f2a74f1e-497f-4e91-b1e5-ffb104dccb03++6061",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f2a74f1e-497f-4e91-b1e5-ffb104dccb03++6061" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f2a74f1e-497f-4e91-b1e5-ffb104dccb03++6061" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "798BB602-D378-4766-826C-4197CB8DA3B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f2a74f1e-497f-4e91-b1e5-ffb104dccb03++6061" : "Projects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TinyEngine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Spiral\/Library\/TinyEngine\/build\/ios\/TinyEngine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/yi.gu@svn.happyelements.net\/repos\/svndata2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f2a74f1e-497f-4e91-b1e5-ffb104dccb03++6061"
+    }
+  ]
+}

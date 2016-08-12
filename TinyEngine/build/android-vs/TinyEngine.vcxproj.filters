@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="platform">
+      <UniqueIdentifier>{0ebd4aeb-502b-4d2a-b01c-b7e97dd634de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\android">
+      <UniqueIdentifier>{d062b9d8-b4a6-4003-89dc-5c45c650590b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{92da4b86-5d19-4e3d-b7c5-aefbdf4b2f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support\libzip">
+      <UniqueIdentifier>{d4347733-534f-4264-bc0d-7575ae078173}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\platform\Common.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\FileUtils.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\PlatformMacros.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\android\FileUtilsAndroid.h">
+      <Filter>platform\android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\android\PlatformDefine.h">
+      <Filter>platform\android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\android\stdc.h">
+      <Filter>platform\android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\support\libzip\config.h">
+      <Filter>support\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\support\libzip\zip.h">
+      <Filter>support\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\support\libzip\zipint.h">
+      <Filter>support\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform\android\JVM.h">
+      <Filter>platform\android</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\platform\FileUtils.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\android\Common.cpp">
+      <Filter>platform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\android\FileUtilsAndroid.cpp">
+      <Filter>platform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\mkstemp.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_add.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_add_dir.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_close.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_delete.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_dirent.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_entry_free.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_entry_new.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_err_str.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_error.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_error_clear.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_error_get.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_error_get_sys_type.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_error_strerror.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_error_to_str.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_fclose.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_file_error_clear.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_file_error_get.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_file_get_offset.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_file_strerror.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_filerange_crc.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_fopen.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_fopen_index.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_fread.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_free.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_get_archive_comment.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_get_archive_flag.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_get_file_comment.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_get_name.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_get_num_files.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_memdup.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_name_locate.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_new.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_open.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_rename.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_replace.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_set_archive_comment.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_set_archive_flag.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_set_file_comment.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_set_name.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_source_buffer.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_source_file.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_source_filep.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_source_free.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_source_function.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_source_zip.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_stat.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_stat_index.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_stat_init.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_strerror.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_unchange.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_unchange_all.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_unchange_archive.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\support\libzip\zip_unchange_data.c">
+      <Filter>support\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\android\JVM.cpp">
+      <Filter>platform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TinyEngine.cpp" />
+  </ItemGroup>
+</Project>
