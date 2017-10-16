@@ -98,33 +98,14 @@ def resign_ipa(input_ipa_path, output_ipa_path, provision_path, password):
 	os.system(cmd)
 
 
-def Main():
-	def str2bool(v): return v.lower() in ("yes", "true", "t", "1", True)
 
-	parser = argparse.ArgumentParser(prog="ipa-build", description="Run commands")
-	parser.add_argument('command', choices=['clean', 'archive', 'export', 'resign'], help='please choose action')
-	parser.add_argument('--project', type=str, help='a xcode project for build')
-	parser.add_argument('--xarchive', type=str, help='a xcode xarchive for export')
-	parser.add_argument('--keychain-password', type=str, help='a password for unlock keychain')
-	parser.add_argument('--input-ipa', type=str, help='ipa package path for input')
-	parser.add_argument('--output-ipa', type=str, help='ipa package path for output')
-	parser.add_argument('--scheme', type=str, help='scheme is used for archive')
-	parser.add_argument('--configuration', type=str, help='a configuration used for clean and archive, see xcodebuid -list')
-	parser.add_argument('--output-archive', type=str, help='a path xarchive will be saved in')
-	parser.add_argument('--export-options', type=str, help='a plist of export options for export')
-	parser.add_argument('--provision-file', type=str, help='a mobile provision file be used for resign')
-	parser.add_argument('--export-path', type=str, help='a path for export ipa')
-
-	# parse args
-	args = parser.parse_args()
-
+def do(args):
 	# check params
 	def check_param(name, default=None):
 		v = args.__dict__.get(name)
 		if v is not None: return v
 		if default is not None: return default
-		parser.print_help()
-		print('Error: {} need argument {}'.format(args.command, name))
+		raise Exception('Error: {} need argument {}'.format(args.command, name))
 
 	# dispatch command
 	if args.command == "clean":
@@ -153,7 +134,44 @@ def Main():
 		resign_ipa(input_ipa, output_ipa, provision_file, keychain_password)
 
 	else:
-		args.print_help()
+		raise Exception('invalid action {}'.format(args.command))
 
 
-Main()
+if __name__ == "__main__":
+	example = "Examples: \n"
+	example += "	ipa-build clean --project=/root/example \r\n"
+	example += "	ipa-build archive --project=/root/example --scheme=Example --keychain-password=xxxxxx \n"
+	example += "	ipa-build export --xarchive=/root/example/Example.xcarchive --export-path=/tmp/Example-Export \n"
+	example += "	ipa-build export --xarchive=/root/example/Example.xcarchive --export-path=/tmp/Example-Export " \
+			   "--export-options=/root/example/ExportOptions.plist\n"
+	example += "	ipa-build resign --input-ipa=/tmp/Example-Export/Example.ipa --output-ipa=/tmp/Example-Export/Example.resign.ipa " \
+			   "--provision-file=~/Library/MobileDevice/Provisioning Profiles/xxx.mobileprovision --keychain-password=xxxx \n"
+
+	def str2bool(v): return v.lower() in ("yes", "true", "t", "1", True)
+
+	parser = argparse.ArgumentParser(prog="ipa-build", description="Run commands")
+	parser.add_argument('command', choices=['clean', 'archive', 'export', 'resign'], help='please choose action')
+	parser.add_argument('--project', type=str, help='a xcode project for build')
+	parser.add_argument('--xarchive', type=str, help='a xcode xarchive for export')
+	parser.add_argument('--keychain-password', type=str, help='a password for unlock keychain')
+	parser.add_argument('--input-ipa', type=str, help='ipa package path for input')
+	parser.add_argument('--output-ipa', type=str, help='ipa package path for output')
+	parser.add_argument('--scheme', type=str, help='scheme is used for archive')
+	parser.add_argument('--configuration', type=str, help='a configuration used for clean and archive, see xcodebuid -list')
+	parser.add_argument('--output-archive', type=str, help='a path xarchive will be saved in')
+	parser.add_argument('--export-options', type=str, help='a plist of export options for export')
+	parser.add_argument('--provision-file', type=str, help='a mobile provision file be used for resign')
+	parser.add_argument('--export-path', type=str, help='a path for export ipa')
+
+	# parse args
+	args = parser.parse_args()
+
+	# do
+	try:
+		do(args)
+
+	except Exception as e:
+		parser.print_help()
+		print(example)
+		print(e)
+
