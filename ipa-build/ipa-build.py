@@ -141,7 +141,6 @@ if __name__ == "__main__":
 	example = "Examples: \n"
 	example += "	ipa-build clean --project=/root/example \r\n"
 	example += "	ipa-build archive --project=/root/example --scheme=Example --keychain-password=xxxxxx \n"
-	example += "	ipa-build export --xarchive=/root/example/Example.xcarchive --export-path=/tmp/Example-Export \n"
 	example += "	ipa-build export --xarchive=/root/example/Example.xcarchive --export-path=/tmp/Example-Export " \
 			   "--export-options=/root/example/ExportOptions.plist\n"
 	example += "	ipa-build resign --input-ipa=/tmp/Example-Export/Example.ipa --output-ipa=/tmp/Example-Export/Example.resign.ipa " \
